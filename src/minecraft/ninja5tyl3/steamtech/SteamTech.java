@@ -17,12 +17,13 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 
 @Mod(modid = SteamTech.modid, name = "SteamTech", version = "0.0.0")
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
-public class SteamTech {
-	
-	public static final String modid = "Ninja_5tyl3_SteamTech";
+public class SteamTech
+{	
+	public static final String modid = "Ninja_5tyl3 SteamTech";
 	
 	@EventHandler
-	public void load(FMLInitializationEvent event) {
+	public void load(FMLInitializationEvent event)
+	{
 		
 	}
 

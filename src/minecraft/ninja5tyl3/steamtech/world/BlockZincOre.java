@@ -1,4 +1,4 @@
-package ninja5tyl3.steamtech;
+package ninja5tyl3.steamtech.world;
 
 import java.util.List;
 
@@ -7,12 +7,14 @@ import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Icon;
+import ninja5tyl3.steamtech.SteamTech;
+import ninja5tyl3.steamtech.SteamTechBlock;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class BlockLeadOre extends SteamTechBlock{
+public class BlockZincOre extends SteamTechBlock{
 	
-	public BlockLeadOre(int id, Material par2Material) {
+	public BlockZincOre(int id, Material par2Material) {
 		
 		super(id, par2Material);
 		
@@ -24,7 +26,7 @@ public class BlockLeadOre extends SteamTechBlock{
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister par1IconRegister) {
 		
-		icons = new Icon[14];
+		icons = new Icon[12];
 		
 		for(int i = 0; i < icons.length; i++) {
 			
