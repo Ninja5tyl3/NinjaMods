@@ -21,6 +21,25 @@ public class SteamTech
 {	
 	public static final String modid = "Ninja_5tyl3 SteamTech";
 	
+	public static Block BlockAluminiumOre;
+	public static Block BlockCobaltOre;
+	public static Block BlockCopperOre;
+	public static Block BlockFerrousOre;
+	public static Block BlockIridiumOre;
+	public static Block BlockLeadOre;
+	public static Block BlockPigIronOre;
+	public static Block BlockPlatinumOre;
+	public static Block BlockSilverOre;
+	public static Block BlockTinOre;
+	public static Block BlockTitaniumOre;
+	public static Block BlockTungstenOre;
+	public static Block BlockUraniumOre;
+	public static Block BlockZincOre;
+	
+	public static Item ItemCopperIngot;
+	
+	EventManager eventmanager = new EventManager();
+	
 	@EventHandler
 	public void load(FMLInitializationEvent event)
 	{
