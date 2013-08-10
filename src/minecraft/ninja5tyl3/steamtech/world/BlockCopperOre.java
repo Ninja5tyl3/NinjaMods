@@ -3,6 +3,8 @@ package ninja5tyl3.steamtech.world;
 import java.util.List;
 
 import net.minecraft.block.material.Material;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockOre;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
@@ -14,8 +16,8 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlockCopperOre extends SteamTechBlock{
 	
-	public BlockCopperOre(int id, Material par2Material) {
-		
+	public BlockCopperOre(int id, Material par2Material)
+	{
 		super(id, par2Material);
 		
 	}
