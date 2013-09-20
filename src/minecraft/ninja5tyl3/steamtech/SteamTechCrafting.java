@@ -13,41 +13,26 @@ import ninja5tyl3.steamtech.SteamTech;
 
 public class SteamTechCrafting
 {
-	//"Block" Stacks
-	ItemStack copperOre = new ItemStack(SteamTech.BlockCopperOre);
-	ItemStack aluminiumOre = new ItemStack(SteamTech.BlockAluminiumOre);
-	ItemStack cobaltOre = new ItemStack(SteamTech.BlockCobaltOre);
-	ItemStack ferrousOre = new ItemStack(SteamTech.BlockFerrousOre);
-	ItemStack iridiumOre = new ItemStack(SteamTech.BlockIridiumOre);
-	ItemStack leadOre = new ItemStack(SteamTech.BlockLeadOre);
-	ItemStack pigIronOre = new ItemStack(SteamTech.BlockPigIronOre);
-	ItemStack platinumOre = new ItemStack(SteamTech.BlockPlatinumOre);
-	ItemStack silverOre = new ItemStack(SteamTech.BlockSilverOre);
-	ItemStack tinOre = new ItemStack(SteamTech.BlockTinOre);
-	ItemStack titaniumOre= new ItemStack(SteamTech.BlockTitaniumOre);
-	ItemStack tungstenOre = new ItemStack(SteamTech.BlockTungstenOre);
-	ItemStack uraniumOre = new ItemStack(SteamTech.BlockUraniumOre);
-	ItemStack zincOre = new ItemStack(SteamTech.BlockZincOre);
-	
-	//Item Stacks
-	static ItemStack copperIngot = new ItemStack(SteamTech.ItemCopperIngot);
-	static ItemStack tinIngot = new ItemStack(SteamTech.ItemTinIngot);
-	static ItemStack aluminiumIngot = new ItemStack(SteamTech.ItemAluminiumIngot);
-	
 	public static void addRecipes()
 	{		
-		//OreDictionary Registration
-		OreDictionary.registerOre("ingotCopper", copperIngot);
-		OreDictionary.registerOre("ingotTin", tinIngot);
-		OreDictionary.registerOre("ingotAluminium", aluminiumIngot);
+
 		
 		//shapeless recipes
 		
 		//shaped recipes
 		
 		//furnace recipes
-		GameRegistry.addSmelting(SteamTech.BlockCopperOre.blockID, copperIngot, 0.1f);
-		GameRegistry.addSmelting(SteamTech.BlockAluminiumOre.blockID, aluminiumIngot, 0.1f);
-		GameRegistry.addSmelting(SteamTech.BlockTinOre.blockID, tinIngot, 0.1f);
+		GameRegistry.addSmelting(SteamTech.BlockAluminiumOre.blockID, SteamTech.aluminiumIngot, 0.1f);
+		GameRegistry.addSmelting(SteamTech.BlockCobaltOre.blockID, SteamTech.cobaltIngot, 0.1f);
+		GameRegistry.addSmelting(SteamTech.BlockCopperOre.blockID, SteamTech.copperIngot, 0.1f);
+		GameRegistry.addSmelting(SteamTech.BlockFerrousOre.blockID, SteamTech.ferrousIngot, 0.1f);
+		GameRegistry.addSmelting(SteamTech.BlockLeadOre.blockID, SteamTech.leadIngot, 0.1f);
+		GameRegistry.addSmelting(SteamTech.BlockPigIronOre.blockID, SteamTech.pigIronIngot, 0.1f);
+		GameRegistry.addSmelting(SteamTech.BlockPlatinumOre.blockID, SteamTech.platinumIngot, 0.1f);
+		GameRegistry.addSmelting(SteamTech.BlockSilverOre.blockID, SteamTech.silverIngot, 0.1f);
+		GameRegistry.addSmelting(SteamTech.BlockTinOre.blockID, SteamTech.tinIngot, 0.1f);
+		GameRegistry.addSmelting(SteamTech.BlockTitaniumOre.blockID, SteamTech.titaniumIngot, 0.1f);
+		GameRegistry.addSmelting(SteamTech.BlockTungstenOre.blockID, SteamTech.tungstenIngot, 0.1f);
+		GameRegistry.addSmelting(SteamTech.BlockZincOre.blockID, SteamTech.zincIngot, 0.1f);
 	}
 }

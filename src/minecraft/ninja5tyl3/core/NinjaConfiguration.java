@@ -10,8 +10,11 @@ import net.minecraftforge.common.Property;
 
 public class NinjaConfiguration extends Configuration
 {
-	public static final String CATEGORY_FLUID = "fluid";
-	public static final String CATEGORY_RECIPE = "recipe";
+	public static final String CATEGORY_FLUID = "Fluids";
+	public static final String CATEGORY_RECIPE = "Recipes";
+	public static final String CATEGORY_WORLDGENERATION = "World Generation";
+	public static final String CATEGORY_STRUCTURE = "Structure";
+	
 	private static boolean[] configMarkers = new boolean[Item.itemsList.length];
 	private static final int ITEM_SHIFT = 256;
     private static final int MAX_BLOCKS = 4096;
