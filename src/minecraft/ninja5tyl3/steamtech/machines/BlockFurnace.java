@@ -17,30 +17,38 @@ import net.minecraft.util.Icon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import ninja5tyl3.steamtech.machines.TileEntityForge;
+
+import ninja5tyl3.steamtech.machines.TileEntityFurnace;
 import ninja5tyl3.steamtech.SteamTechBlock;
 
 /**
  * Too many errors! Fixed the errors!  Moutha-Fucking TYPOS!
  * Need to work on the EVERYTHING!
  */
-public class BlockForge extends BlockContainer
+public class BlockFurnace extends BlockContainer
 {
-	private final Random forgeRand = new Random();
+	//Radomly throws inventory contents everywhere
+	private final Random furnaceRand = new Random();
 	
-	//private final boolean isActive;
+	//True if acitve forge, false if idle
+	private final boolean isActive;
 	
-	public BlockForge(int id, Material material)
+	//used to prevent the inventory to be dropped upon block removal, used internally when the forge changes between active and idle
+	private static boolean keepFurnaceInventory = false;
+	
+	private Icon topIcon;
+	private Icon frontIcon;
+	
+	public BlockFurnace(int par1, int i, Material iron, boolean par2)
 	{
-		super(id, material);
-		//TODO: create and register a texture
-		setUnlocalizedName("SteamTech:Forge");
+		super(par1, Material.iron);
+		this.isActive = par2;
 	}
 	//called when block is broken and destroys the primary block
 	@Override
 	public void breakBlock(World world, int i, int j, int k, int par5, int par6)
 	{
-		TileEntityForge tileEntity = (TileEntityForge)world.getBlockTileEntity(i, j, k);
+		TileEntityFurnace tileEntity = (TileEntityFurnace)world.getBlockTileEntity(i, j, k);
 		if (tileEntity !=null)
 		{
 			world.destroyBlock(tileEntity.primary_x, tileEntity.primary_y, tileEntity.primary_z, false);
@@ -48,26 +56,6 @@ public class BlockForge extends BlockContainer
 		}
 		
 		world.removeBlockTileEntity(i, j, k);
-	}
-	//primary block check
-	@Override
-	public void onNeighborBlockChange(World world, int i, int j, int k, int par5)
-	{
-		TileEntityForge tileEntity = (TileEntityForge)world.getBlockTileEntity(i, j, k);
-		if (tileEntity !=null)
-		{
-			if(world.getBlockId(tileEntity.primary_x, tileEntity.primary_y, tileEntity.primary_z) < 1)
-			{
-				world.destroyBlock(i,j,k, false);
-				world.removeBlockTileEntity(i, j, k);
-			}
-		}
-	}
-	//Motha-Fuckin Invisibility!
-	@Override
-	public boolean shouldSideBeRendered(IBlockAccess iblockaccess, int i, int j, int k, int l)
-	{
-		return false;
 	}
 	//rendering of surrounding blocks
 	@Override
@@ -79,7 +67,7 @@ public class BlockForge extends BlockContainer
 	@Override
 	public TileEntity createNewTileEntity(World world)
 	{
-		return new TileEntityForge();
+		return new TileEntityFurnace();
 	}
 
 }
