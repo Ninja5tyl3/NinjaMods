@@ -8,9 +8,8 @@ import java.lang.reflect.Field;
 import cpw.mods.fml.common.FMLLog;
 import net.minecraftforge.common.Configuration;
 import net.minecraftforge.common.Property;
-
-import ninja5tyl3.core.Core;
-import ninja5tyl3.core.NinjaConfiguration;
+import ninja5tyl3.NinjaAPI.Core;
+import ninja5tyl3.NinjaAPI.NinjaConfiguration;
 
 public class Config
 {

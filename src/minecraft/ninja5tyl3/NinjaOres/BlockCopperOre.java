@@ -1,8 +1,10 @@
-package ninja5tyl3.steamtech.world;
+package ninja5tyl3.NinjaOres;
 
 import java.util.List;
 
 import net.minecraft.block.material.Material;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockOre;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
@@ -12,10 +14,10 @@ import ninja5tyl3.steamtech.SteamTechBlock;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class BlockGraphiteOre extends SteamTechBlock{
+public class BlockCopperOre extends SteamTechBlock{
 	
-	public BlockGraphiteOre(int id, Material par2Material) {
-		
+	public BlockCopperOre(int id, Material par2Material)
+	{
 		super(id, par2Material);
 		
 	}
@@ -26,7 +28,7 @@ public class BlockGraphiteOre extends SteamTechBlock{
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister par1IconRegister) {
 		
-		icons = new Icon[9];
+		icons = new Icon[4];
 		
 		for(int i = 0; i < icons.length; i++) {
 			

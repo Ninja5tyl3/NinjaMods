@@ -1,4 +1,4 @@
-package ninja5tyl3.steamtech.world;
+package ninja5tyl3.NinjaOres;
 
 import java.util.List;
 
@@ -12,9 +12,9 @@ import ninja5tyl3.steamtech.SteamTechBlock;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class BlockTungstenOre extends SteamTechBlock{
+public class BlockLeadOre extends SteamTechBlock{
 	
-	public BlockTungstenOre(int id, Material par2Material) {
+	public BlockLeadOre(int id, Material par2Material) {
 		
 		super(id, par2Material);
 		
@@ -26,7 +26,7 @@ public class BlockTungstenOre extends SteamTechBlock{
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister par1IconRegister) {
 		
-		icons = new Icon[8];
+		icons = new Icon[14];
 		
 		for(int i = 0; i < icons.length; i++) {
 			
