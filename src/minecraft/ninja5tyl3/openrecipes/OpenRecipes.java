@@ -20,9 +20,8 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.GameRegistry;
-
-import ninja5tyl3.core.Core;
-import ninja5tyl3.core.NinjaConfiguration;
+import ninja5tyl3.NinjaAPI.Core;
+import ninja5tyl3.NinjaAPI.NinjaConfiguration;
 
 @Mod(modid="OpenRecipes Mod", name="OpenRecipes Mod", version="1.1.0")
 @NetworkMod(clientSideRequired=true, serverSideRequired=false)

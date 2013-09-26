@@ -1,4 +1,4 @@
-package ninja5tyl3.steamtech.world;
+package ninja5tyl3.NinjaOres;
 
 import java.util.List;
 

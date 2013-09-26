@@ -23,9 +23,8 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.GameRegistry;
-
-import ninja5tyl3.core.Core;
-import ninja5tyl3.core.NinjaConfiguration;
+import ninja5tyl3.NinjaAPI.Core;
+import ninja5tyl3.NinjaAPI.NinjaConfiguration;
 
 @Mod(modid="Extra Structures Mod", name="Extra Structures Mod", version="0.0.0")
 @NetworkMod(clientSideRequired=true, serverSideRequired=false)

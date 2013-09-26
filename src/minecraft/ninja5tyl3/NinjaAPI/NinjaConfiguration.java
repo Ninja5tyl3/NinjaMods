@@ -1,4 +1,4 @@
-package ninja5tyl3.core;
+package ninja5tyl3.NinjaAPI;
 
 import java.io.File;
 
